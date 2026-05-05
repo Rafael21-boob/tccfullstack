@@ -1,0 +1,299 @@
+.home {
+    min-height: 100vh;
+    background: #05070d;
+  }
+  
+  .navbar {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 74px;
+    padding: 0 48px;
+    background: rgba(255, 255, 255, 0.96);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #061a33;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+  }
+  
+  .navbar nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar nav button {
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: #061a33;
+  }
+  
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 140px 70px 80px;
+    overflow: hidden;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+    opacity: 0.45;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 75% 20%, rgba(0, 168, 232, 0.3), transparent 35%),
+      linear-gradient(90deg, rgba(0, 12, 25, 0.98), rgba(0, 12, 25, 0.75), rgba(0, 12, 25, 0.35));
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(0, 168, 232, 0.14);
+    border: 1px solid rgba(0, 168, 232, 0.4);
+    color: #54d9ff;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+  .hero h1 {
+    font-size: clamp(44px, 6vw, 86px);
+    line-height: 0.95;
+    max-width: 850px;
+  }
+  
+  .hero h1 strong {
+    color: #00c8ff;
+    text-shadow: 0 0 35px rgba(0, 200, 255, 0.7);
+  }
+  
+  .hero p {
+    margin-top: 26px;
+    color: #d7e7f5;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 18px;
+    margin-top: 36px;
+  }
+  
+  .drone-area {
+    height: 420px;
+    border-radius: 36px;
+    border: 1px solid rgba(0, 200, 255, 0.35);
+    background:
+      linear-gradient(rgba(0, 200, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 200, 255, 0.06) 1px, transparent 1px),
+      rgba(2, 10, 24, 0.75);
+    background-size: 32px 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 45px rgba(0, 168, 232, 0.18);
+  }
+  
+  .drone-object {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    color: #00d5ff;
+    filter: drop-shadow(0 0 22px rgba(0, 213, 255, 0.9));
+  }
+  
+  .drone-light {
+    width: 120px;
+    height: 150px;
+    margin: -5px auto 0;
+    background: linear-gradient(rgba(0, 213, 255, 0.35), transparent);
+    clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%);
+    opacity: 0.6;
+  }
+  
+  .scan-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #00d5ff;
+    box-shadow: 0 0 20px #00d5ff;
+  }
+  
+  .section {
+    padding: 100px 70px;
+    background: #ffffff;
+    color: #061a33;
+  }
+  
+  .section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+  
+  .section-title h2 {
+    font-size: 42px;
+    margin-bottom: 18px;
+  }
+  
+  .section-title p {
+    color: #52606d;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+  }
+  
+  .benefit-card {
+    min-height: 260px;
+    padding: 32px;
+    border-radius: 28px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 168, 232, 0.18);
+    box-shadow: 0 20px 50px rgba(0, 45, 80, 0.08);
+  }
+  
+  .benefit-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 22px;
+    background: rgba(0, 168, 232, 0.1);
+    color: #00a8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+  
+  .benefit-card p {
+    color: #596777;
+    line-height: 1.6;
+  }
+  
+  .tech-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 110px 70px;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(0, 168, 232, 0.25), transparent 30%),
+      #05070d;
+  }
+  
+  .tech-section h2 {
+    font-size: 48px;
+    margin-bottom: 22px;
+  }
+  
+  .tech-section p {
+    color: #c7d7e5;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+  
+  .flow {
+    margin-top: 30px;
+    display: grid;
+    gap: 14px;
+  }
+  
+  .flow div {
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 168, 232, 0.25);
+  }
+  
+  .scanner-box {
+    position: relative;
+    height: 430px;
+    border-radius: 34px;
+    border: 1px solid rgba(0, 213, 255, 0.4);
+    background: rgba(0, 20, 40, 0.75);
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 168, 232, 0.2);
+  }
+  
+  .scanner-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #00d5ff;
+    box-shadow: 0 0 30px #00d5ff;
+    z-index: 2;
+  }
+  
+  .scanner-grid {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(rgba(0, 213, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 213, 255, 0.08) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+  
+  .scanner-corners {
+    position: absolute;
+    inset: 40px;
+    border: 2px solid #00d5ff;
+    border-radius: 28px;
+    box-shadow: 0 0 40px rgba(0, 213, 255, 0.5);
+  }
+  
+  .final-cta {
+    padding: 110px 30px;
+    text-align: center;
+    background: #ffffff;
+    color: #061a33;
+  }
+  
+  .final-cta h2 {
+    margin-top: 20px;
+    font-size: 42px;
+  }
+  
+  .final-cta p {
+    max-width: 720px;
+    margin: 18px auto 30px;
+    color: #596777;
+    line-height: 1.7;
+  }

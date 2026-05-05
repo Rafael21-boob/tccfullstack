@@ -1,0 +1,70 @@
+.company-page {
+    min-height: 100vh;
+    background: #05070d;
+    padding: 40px;
+  }
+  
+  .back-action {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #00d5ff;
+    margin-bottom: 30px;
+  }
+  
+  .company-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .company-hero h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+  }
+  
+  .company-hero p {
+    color: #9fb6c9;
+  }
+  
+  .start-reading {
+    padding: 12px 18px;
+    border-radius: 14px;
+    border: none;
+    background: #00d5ff;
+    color: #00101f;
+    font-weight: 900;
+  }
+  
+  .readings-list {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .reading-card {
+    padding: 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 213, 255, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .reading-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 213, 255, 0.12);
+    color: #00d5ff;
+  }
+  
+  .reading-card span {
+    margin-left: auto;
+    color: #00ffb3;
+    font-weight: 800;
+  }

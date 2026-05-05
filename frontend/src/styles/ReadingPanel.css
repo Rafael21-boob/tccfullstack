@@ -1,0 +1,49 @@
+.reading-page {
+    min-height: 100vh;
+    background: #05070d;
+    padding: 40px;
+  }
+  
+  .reading-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+    align-items: center;
+  }
+  
+  .reading-control h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+  }
+  
+  .reading-control p {
+    color: #9fb6c9;
+  }
+  
+  .status-box {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 22px;
+    background: rgba(0, 213, 255, 0.09);
+    border: 1px solid rgba(0, 213, 255, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .reading-actions {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .reading-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 14px;
+    border: none;
+    background: #00d5ff;
+    color: #00101f;
+    font-weight: 900;
+  }
